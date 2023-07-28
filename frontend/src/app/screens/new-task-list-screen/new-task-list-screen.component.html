@@ -1,0 +1,16 @@
+<div class="container text-center">
+    <div class="row">
+        <div class="col-8">
+            <div class="mb-3 mt-5">
+                <h3 for="taskList" class="form-label mb-3">Add a New Task List</h3>
+                <input #taskListValue type="email" class="form-control" id="taskList" placeholder="Add a title">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-8">
+            <button type="button" class="btn btn-primary m-2 " (click) = "addNewTaskList(taskListValue.value)">Add Task List</button>
+            <button type="button" class="btn btn-secondary" (click)="cancelTaskListAdd()">Cancel</button>
+        </div>
+    </div>
+</div>
